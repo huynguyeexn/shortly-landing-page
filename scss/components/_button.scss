@@ -1,0 +1,27 @@
+.btn {
+  background-color: $primary-color;
+  padding: 15px 25px;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: large;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.15s ease-in;
+  display: inline-block;
+
+  &--rounded {
+    border-radius: 2rem;
+  }
+  &--block {
+    display: block;
+    width: 100%;
+  }
+
+  &:hover {
+    background-color: rgb(29, 169, 169);
+  }
+  &:active {
+    opacity: 0.8;
+  }
+}

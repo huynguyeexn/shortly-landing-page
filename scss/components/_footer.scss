@@ -1,0 +1,49 @@
+.footer {
+  background-color: $bg-darker;
+  text-align: center;
+  padding: 50px 0;
+  &__logo {
+    margin-bottom: 50px;
+    img {
+      filter: invert(100%) contrast(2);
+    }
+  }
+  h5 {
+    color: #ffffff;
+  }
+
+  &__box {
+    margin-bottom: 40px;
+    h5 {
+      margin-bottom: 20px;
+    }
+
+    ul {
+      display: flex;
+      flex-flow: column;
+      li {
+        margin-bottom: 10px;
+      }
+    }
+  }
+  &__socials {
+    ul {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      a {
+        color: #ffffff;
+        font-size: 2rem;
+        margin: 0 10px;
+      }
+    }
+  }
+
+  @include desktop {
+    .container {
+      @include flex(start, space-between);
+      text-align: left;
+    }
+    padding-bottom: 0;
+  }
+}

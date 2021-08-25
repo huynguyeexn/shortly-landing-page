@@ -1,0 +1,91 @@
+.header {
+  padding-bottom: 100px;
+  background-color: $bg-primary;
+  &__nav {
+    @include flex(center, space-between);
+    padding-top: 40px;
+    &__toggle {
+      cursor: pointer;
+      i {
+        font-size: 2rem;
+      }
+
+      @include desktop {
+        display: none;
+      }
+    }
+
+    &__desktop {
+      display: none;
+      margin-left: 20px;
+      ul {
+        display: flex;
+        li {
+          a {
+            padding: 0 20px;
+          }
+        }
+      }
+
+      &__buttons {
+        .btn {
+          margin-left: 20px;
+        }
+      }
+
+      @include desktop {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-between;
+        align-items: center;
+      }
+    }
+  }
+
+  &__hero {
+    display: flex;
+    flex-flow: column;
+    &__img {
+      position: static;
+      top: 23px;
+      margin-left: auto;
+      overflow: hidden;
+      order: -1;
+      width: 130vw;
+      max-width: 578px;
+      margin-bottom: 50px;
+      height: auto;
+
+      @include desktop {
+        margin-left: auto;
+        margin-right: -150px;
+      }
+    }
+    &__summary {
+      text-align: center;
+      h1,
+      p {
+        margin-bottom: 1rem;
+      }
+      p {
+        line-height: 1.7;
+      }
+
+      button {
+        margin: 20px 0;
+      }
+      @include desktop {
+        text-align: left;
+        h1 {
+          font-size: 3rem;
+        }
+      }
+    }
+
+    @include desktop {
+      flex-flow: row-reverse;
+      align-items: center;
+      padding: 50px 0;
+    }
+  }
+}

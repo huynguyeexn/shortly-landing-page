@@ -1,0 +1,16 @@
+.boost {
+  background-color: $bg-dark;
+  background-image: url("../../images/bg-boost-mobile.svg");
+  background-position: top right;
+  background-repeat: no-repeat;
+  padding: 70px 0;
+  text-align: center;
+  &__title {
+    color: #ffffff;
+    margin-bottom: 1rem;
+  }
+
+  @include desktop {
+    background-image: url("../../images/bg-boost-desktop.svg");
+  }
+}

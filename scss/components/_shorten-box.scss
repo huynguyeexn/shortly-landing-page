@@ -1,0 +1,45 @@
+.shorten__box {
+  position: relative;
+  &__wrapper {
+    background-color: $bg-dark;
+    background-image: url("../../images/bg-shorten-mobile.svg");
+    background-position: top right;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    border-radius: 1rem;
+    width: 100%;
+    margin-top: -75px;
+
+    @include desktop {
+      background-image: url("../../images/bg-shorten-desktop.svg");
+    }
+  }
+  &__input {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    border: none;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    @include desktop {
+      margin: 0;
+      flex-shrink: 1;
+    }
+  }
+  @include desktop {
+    &__wrapper {
+      display: flex;
+    }
+    &__input {
+      margin-right: 20px;
+    }
+    &__button {
+      width: 200px;
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "name": "url-shorterning",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "scss": "sass scss/app.scss css/style.css --watch"
+  },
+  "dependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
